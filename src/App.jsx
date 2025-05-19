@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Post from './components/Post';
 import AddPost from './components/AddPost';
 import TodoList from './components/TodoList';
+import Timer from './components/Timer';
 import axios from 'axios';
 import './App.css';
 
@@ -93,6 +94,7 @@ function App() {
       <div className="app-sections">
         <div className="section todo-section">
           <TodoList />
+          <Timer />
         </div>
         
         <div className="section posts-section">
