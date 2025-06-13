@@ -1,0 +1,91 @@
+.app {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.header {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #1e293b;
+  font-size: 2rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.error h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.error p {
+  margin-bottom: 1rem;
+}
+
+.error ol {
+  margin-left: 1.5rem;
+}
+
+.error li {
+  margin-bottom: 0.5rem;
+}
+
+.error code {
+  background-color: #fecaca;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.error a {
+  color: #dc2626;
+  text-decoration: underline;
+}
+
+.error a:hover {
+  color: #b91c1c;
+}
+
+.noResults {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .error {
+    padding: 1rem;
+  }
+} 

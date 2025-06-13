@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Contacts.module.css';
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -18,59 +19,52 @@ const Contacts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // This is just a placeholder for form submission
-    console.log('Form submitted:', formData);
     alert('Сообщение отправлено!');
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <div className="page-container">
-      <h1>Контакты</h1>
-      <p>Свяжитесь с нами, используя форму ниже:</p>
-      
-      <form onSubmit={handleSubmit} className="contact-form">
-        <div className="form-group">
+    <div className={styles.contactsContainer}>
+      <h1 className={styles.contactsTitle}>Контакты</h1>
+      <p className={styles.contactsText}>Свяжитесь с нами, используя форму ниже:</p>
+      <form onSubmit={handleSubmit} className={styles.contactForm} autoComplete="off">
+        <div className={styles.formGroup}>
           <label htmlFor="name">Имя:</label>
           <input
             type="text"
             id="name"
             name="name"
+            className={styles.input}
             value={formData.name}
             onChange={handleChange}
             required
           />
         </div>
-        
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
             name="email"
+            className={styles.input}
             value={formData.email}
             onChange={handleChange}
             required
           />
         </div>
-        
-        <div className="form-group">
+        <div className={styles.formGroup}>
           <label htmlFor="message">Сообщение:</label>
           <textarea
             id="message"
             name="message"
+            className={styles.textarea}
             value={formData.message}
             onChange={handleChange}
             rows="5"
             required
           />
         </div>
-        
-        <button type="submit" className="submit-btn">Отправить</button>
+        <button type="submit" className={styles.submitBtn}>Отправить</button>
       </form>
     </div>
   );
