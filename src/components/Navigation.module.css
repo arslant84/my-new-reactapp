@@ -13,8 +13,21 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -63,6 +76,10 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0.5rem 1rem;
+  }
+  .center {
+    width: 100%;
+    justify-content: flex-start;
   }
   .navLinks {
     gap: 1rem;

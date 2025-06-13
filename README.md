@@ -1,12 +1,42 @@
-# React + Vite
+# Unsplash Image Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React course project for the "Frontend Advanced" course.
 
-Currently, two official plugins are available:
+## Project Description
+A modern web application for searching and viewing images using the Unsplash API. The app demonstrates advanced React concepts, modular architecture, form validation, responsive design, and best practices for frontend development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Image Search:** Search Unsplash for images by keywords.
+- **Responsive Gallery:** Adaptive grid layout for images with infinite scroll (lazy loading).
+- **Full Image View:** Click any image to view it in a modal with details.
+- **Form Validation:** Uses `react-hook-form` and `zod` for robust form validation.
+- **Routing:** Multi-page navigation with `react-router-dom` (Home, About, Contacts, NotFound).
+- **Modern UI:** Clean, adaptive design with CSS modules.
+- **Error Handling:** User-friendly error messages for API and validation errors.
 
-## Expanding the ESLint configuration
+## Technologies Used
+- React (functional components & hooks)
+- Vite (build tool)
+- react-router-dom (routing)
+- react-hook-form + zod (form validation)
+- Axios (API requests)
+- CSS Modules (styling)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Add your Unsplash API key to a `.env` file:
+   ```
+   VITE_UNSPLASH_API_KEY=your_access_key_here
+   ```
+4. Start the app: `npm run dev`
+
+## Course Project
+This project was created as part of the "Frontend Advanced" React course to demonstrate:
+- Clean code and modular structure
+- Modern React patterns
+- Real-world API integration
+- Responsive and accessible UI
+
+---
+Feel free to use this as a reference for your own React projects!

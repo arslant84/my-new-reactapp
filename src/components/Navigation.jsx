@@ -6,35 +6,35 @@ const Navigation = () => {
   return (
     <nav className={styles.navigation}>
       <div className={styles.navContainer}>
-        <NavLink to="/home" className={styles.logo}>
-          ReactRouter
-        </NavLink>
-        <ul className={styles.navLinks}>
-          <li>
-            <NavLink 
-              to="/home" 
-              className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-            >
-              Главная
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to="/about" 
-              className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-            >
-              О нас
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to="/contacts" 
-              className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
-            >
-              Контакты
-            </NavLink>
-          </li>
-        </ul>
+        <div className={styles.left}><NavLink to="/home" className={styles.logo}>ReactRouter</NavLink></div>
+        <div className={styles.center}>
+          <ul className={styles.navLinks}>
+            <li>
+              <NavLink 
+                to="/home" 
+                className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+              >
+                Главная
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/about" 
+                className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+              >
+                О нас
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/contacts" 
+                className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+              >
+                Контакты
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
